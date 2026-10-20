@@ -21,3 +21,23 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies in all project folders
+**/node_modules/
+
+# Build output in all project folders
+**/build/
+**/dist/
+
+# Logs
+*.log
+
+# Editor and OS files
+.vscode/
+Thumbs.db

@@ -16,13 +16,14 @@ function Navbar() {
             alt="Zerodha Logo"
             style={{ width: "130px" }}
           />
-</Link>
+        </Link>
+
         {/* Mobile Button */}
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -37,30 +38,42 @@ function Navbar() {
         >
           <ul className="navbar-nav align-items-center">
 
+            {/* Signup */}
             <li className="nav-item">
               <Link className="nav-link px-3" to="/signup">
                 Signup
               </Link>
             </li>
 
+            {/* Login */}
+            <li className="nav-item">
+              <Link className="nav-link px-3" to="/login">
+                Login
+              </Link>
+            </li>
+
+            {/* About */}
             <li className="nav-item">
               <Link className="nav-link px-3" to="/about">
                 About
-             </Link>
+              </Link>
             </li>
 
+            {/* Products */}
             <li className="nav-item">
               <Link className="nav-link px-3" to="/product">
                 Products
-             </Link>
+              </Link>
             </li>
 
+            {/* Pricing */}
             <li className="nav-item">
               <Link className="nav-link px-3" to="/pricing">
                 Pricing
-            </Link>
+              </Link>
             </li>
 
+            {/* Support */}
             <li className="nav-item">
               <Link className="nav-link px-3" to="/support">
                 Support
@@ -70,8 +83,10 @@ function Navbar() {
             {/* Menu Icon */}
             <li className="nav-item">
               <button
+                type="button"
                 className="btn btn-link nav-link px-3"
-                style={{ fontSize: "22px" }}
+                style={{ fontSize: "22px", textDecoration: "none" }}
+                aria-label="Open menu"
               >
                 ☰
               </button>

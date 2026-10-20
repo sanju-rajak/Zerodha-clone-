@@ -1,0 +1,14 @@
+{
+  "name": "zerodha-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "backend": "npm --prefix Backend start",
+    "dashboard": "npm --prefix dashboard start",
+    "frontend": "npm --prefix zerodha-frontend start",
+    "dev": "concurrently \"npm run backend\" \"npm run dashboard\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
